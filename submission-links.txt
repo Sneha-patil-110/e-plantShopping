@@ -1,13 +1,12 @@
-PARADISE NURSERY - SUBMISSION LINKS (verified 2026-10-28, commit 9403626)
+PARADISE NURSERY / e-plantShopping - SUBMISSION LINKS (verified 2026-10-28, commit ea7a2be)
 
-Public repository:  https://github.com/Sneha-patil-110/paradise-nursery
+Public repository:        https://github.com/Sneha-patil-110/e-plantShopping
 Live site (GitHub Pages): https://sneha-patil-110.github.io/paradise-nursery/
-Deployed commit:    9403626 (deploy workflow: success)
 
-Task 1  README.md:          https://github.com/Sneha-patil-110/paradise-nursery/blob/main/README.md
-Task 2  AboutUs.jsx:        https://github.com/Sneha-patil-110/paradise-nursery/blob/main/src/AboutUs.jsx
-Task 3  App.css:            https://github.com/Sneha-patil-110/paradise-nursery/blob/main/src/App.css
-Task 4  App.jsx:            https://github.com/Sneha-patil-110/paradise-nursery/blob/main/src/App.jsx
-Task 5  CartSlice.jsx:      https://github.com/Sneha-patil-110/paradise-nursery/blob/main/src/CartSlice.jsx
-Task 6  ProductList.jsx:    https://github.com/Sneha-patil-110/paradise-nursery/blob/main/src/ProductList.jsx
-Task 7  CartItem.jsx:       https://github.com/Sneha-patil-110/paradise-nursery/blob/main/src/CartItem.jsx
+Q1 README.md:        https://github.com/Sneha-patil-110/e-plantShopping/blob/main/README.md
+Q2 AboutUs.jsx:      https://github.com/Sneha-patil-110/e-plantShopping/blob/main/src/AboutUs.jsx
+Q3 App.css:          https://github.com/Sneha-patil-110/e-plantShopping/blob/main/src/App.css
+Q4 App.jsx:          https://github.com/Sneha-patil-110/e-plantShopping/blob/main/src/App.jsx
+Q5 CartSlice.jsx:    https://github.com/Sneha-patil-110/e-plantShopping/blob/main/src/CartSlice.jsx
+Q6 ProductList.jsx:  https://github.com/Sneha-patil-110/e-plantShopping/blob/main/src/ProductList.jsx
+Q7 CartItem.jsx:     https://github.com/Sneha-patil-110/e-plantShopping/blob/main/src/CartItem.jsx
