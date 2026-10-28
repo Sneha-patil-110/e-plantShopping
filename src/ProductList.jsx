@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux'
 import { CATEGORIES, PLANTS } from './data/plants'
-import { addToCart, selectCartItems } from './CartSlice'
+import { addItem, selectCartItems } from './CartSlice'
 
 const formatPrice = (value) =>
   new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(value)
@@ -35,7 +35,7 @@ function ProductList() {
                           type="button"
                           className={`btn btn-primary ${isInCart ? 'btn-added' : ''}`}
                           disabled={isInCart}
-                          onClick={() => dispatch(addToCart(plant))}
+                          onClick={() => dispatch(addItem(plant))}
                         >
                           {isInCart ? 'In Cart' : 'Add to Cart'}
                         </button>

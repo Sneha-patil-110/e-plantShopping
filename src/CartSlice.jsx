@@ -1,12 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-// Cart state: { items: [{ id, name, price, image, quantity }] }
+// Cart state: { items: [{ id, name, price, image, alt, quantity }] }
 // Rules:
-// - addToCart adds a new line with quantity 1. If the product is already in the cart it is
+// - addItem adds a new line with quantity 1. If the product is already in the cart it is
 //   left unchanged, so there are never duplicate entries.
-// - increaseQuantity / decreaseQuantity change quantity by exactly one.
-// - decreaseQuantity never goes below 1. It does NOT remove the item; use removeFromCart.
-// - removeFromCart deletes the whole line.
+// - updateQuantity sets an item's quantity to the given value (minimum 1).
+// - removeItem deletes the whole line.
 
 const initialState = { items: [] }
 
@@ -14,7 +13,7 @@ const cartSlice = createSlice({
   name: 'cart',
   initialState,
   reducers: {
-    addToCart(state, action) {
+    addItem(state, action) {
       const product = action.payload
       const existing = state.items.find((item) => item.id === product.id)
       if (!existing) {
@@ -28,16 +27,14 @@ const cartSlice = createSlice({
         })
       }
     },
-    increaseQuantity(state, action) {
-      const item = state.items.find((i) => i.id === action.payload)
-      if (item) item.quantity += 1
-    },
-    decreaseQuantity(state, action) {
-      const item = state.items.find((i) => i.id === action.payload)
-      if (item && item.quantity > 1) item.quantity -= 1
-    },
-    removeFromCart(state, action) {
+    removeItem(state, action) {
       state.items = state.items.filter((i) => i.id !== action.payload)
+    },
+    // payload: { id, quantity }. Quantity never drops below 1; use removeItem to delete.
+    updateQuantity(state, action) {
+      const { id, quantity } = action.payload
+      const item = state.items.find((i) => i.id === id)
+      if (item) item.quantity = Math.max(1, quantity)
     },
     clearCart(state) {
       state.items = []
@@ -45,8 +42,7 @@ const cartSlice = createSlice({
   },
 })
 
-export const { addToCart, increaseQuantity, decreaseQuantity, removeFromCart, clearCart } =
-  cartSlice.actions
+export const { addItem, removeItem, updateQuantity, clearCart } = cartSlice.actions
 
 // Selectors derive everything from the store; components never keep their own copy.
 export const selectCartItems = (state) => state.cart.items

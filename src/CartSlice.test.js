@@ -1,10 +1,9 @@
 import { describe, expect, it } from 'vitest'
 import reducer, {
-  addToCart,
+  addItem,
   clearCart,
-  decreaseQuantity,
-  increaseQuantity,
-  removeFromCart,
+  updateQuantity,
+  removeItem,
   selectCartCount,
   selectCartTotal,
 } from './CartSlice'
@@ -15,31 +14,31 @@ const wrap = (items) => ({ cart: { items } })
 
 describe('cart slice', () => {
   it('adds a product with quantity 1 and never duplicates it', () => {
-    let state = reducer(undefined, addToCart(snake))
-    state = reducer(state, addToCart(snake))
+    let state = reducer(undefined, addItem(snake))
+    state = reducer(state, addItem(snake))
     expect(state.items).toHaveLength(1)
     expect(state.items[0].quantity).toBe(1)
   })
 
   it('increments and decrements by exactly one, never below 1', () => {
-    let state = reducer(undefined, addToCart(snake))
-    state = reducer(state, increaseQuantity(snake.id))
+    let state = reducer(undefined, addItem(snake))
+    state = reducer(state, updateQuantity({ id: snake.id, quantity: 2 }))
     expect(state.items[0].quantity).toBe(2)
-    state = reducer(state, decreaseQuantity(snake.id))
+    state = reducer(state, updateQuantity({ id: snake.id, quantity: 0 }))
     expect(state.items[0].quantity).toBe(1)
-    state = reducer(state, decreaseQuantity(snake.id))
+    state = reducer(state, updateQuantity({ id: snake.id, quantity: 0 }))
     expect(state.items[0].quantity).toBe(1)
   })
 
   it('removes an entire line', () => {
-    let state = reducer(undefined, addToCart(snake))
-    state = reducer(state, addToCart(lily))
-    state = reducer(state, removeFromCart(snake.id))
+    let state = reducer(undefined, addItem(snake))
+    state = reducer(state, addItem(lily))
+    state = reducer(state, removeItem(snake.id))
     expect(state.items.map((i) => i.id)).toEqual([lily.id])
   })
 
   it('clears the cart', () => {
-    let state = reducer(undefined, addToCart(snake))
+    let state = reducer(undefined, addItem(snake))
     state = reducer(state, clearCart())
     expect(state.items).toEqual([])
   })

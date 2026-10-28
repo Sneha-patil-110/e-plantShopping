@@ -2,9 +2,8 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import {
-  decreaseQuantity,
-  increaseQuantity,
-  removeFromCart,
+  updateQuantity,
+  removeItem,
   selectCartCount,
   selectCartItems,
   selectCartTotal,
@@ -53,7 +52,7 @@ function CartItem() {
                 type="button"
                 className="btn btn-secondary btn-icon"
                 aria-label={`Decrease quantity of ${item.name}`}
-                onClick={() => dispatch(decreaseQuantity(item.id))}
+                onClick={() => dispatch(updateQuantity({ id: item.id, quantity: item.quantity - 1 }))}
                 disabled={item.quantity <= 1}
               >
                 −
@@ -63,7 +62,7 @@ function CartItem() {
                 type="button"
                 className="btn btn-secondary btn-icon"
                 aria-label={`Increase quantity of ${item.name}`}
-                onClick={() => dispatch(increaseQuantity(item.id))}
+                onClick={() => dispatch(updateQuantity({ id: item.id, quantity: item.quantity + 1 }))}
               >
                 +
               </button>
@@ -75,7 +74,7 @@ function CartItem() {
               type="button"
               className="btn btn-link btn-remove"
               aria-label={`Remove ${item.name} from cart`}
-              onClick={() => dispatch(removeFromCart(item.id))}
+              onClick={() => dispatch(removeItem(item.id))}
             >
               Remove
             </button>
