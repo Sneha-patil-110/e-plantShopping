@@ -33,7 +33,7 @@ describe('cart slice', () => {
   it('removes an entire line', () => {
     let state = reducer(undefined, addItem(snake))
     state = reducer(state, addItem(lily))
-    state = reducer(state, removeItem(snake.id))
+    state = reducer(state, removeItem(snake.name))
     expect(state.items.map((i) => i.id)).toEqual([lily.id])
   })
 
@@ -45,8 +45,8 @@ describe('cart slice', () => {
 
   it('counts units and totals from quantities', () => {
     const state = wrap([
-      { ...snake, quantity: 2 },
-      { ...lily, quantity: 3 },
+      { ...snake, cost: 28, quantity: 2 },
+      { ...lily, cost: 26, quantity: 3 },
     ])
     expect(selectCartCount(state)).toBe(5)
     expect(selectCartTotal(state)).toBe(28 * 2 + 26 * 3)

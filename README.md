@@ -1,4 +1,6 @@
-# Paradise Nursery
+# e-plantShopping
+
+Plant shop built as the Paradise Nursery storefront.
 
 A React shopping experience for indoor houseplants. Visitors read about the nursery on the landing page, browse plants grouped by category, and manage a shopping cart that stays in sync across every page.
 
