@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client'
 import { Provider } from 'react-redux'
 import { HashRouter, Route, Routes } from 'react-router-dom'
 import { store } from './store'
-import Header from './Header'
 import App from './App'
 import ProductList from './ProductList'
 import CartItem from './CartItem'
@@ -14,7 +13,6 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Provider store={store}>
       <HashRouter>
-        <Header />
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/plants" element={<ProductList />} />

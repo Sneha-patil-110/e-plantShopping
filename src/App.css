@@ -132,7 +132,8 @@ button:focus-visible {
 .btn-added { background: #d6d2c4; color: #5a5443; border-color: #bdb6a0; }
 
 /* ---------- Landing hero ---------- */
-.hero {
+.hero,
+.background-image {
   min-height: 80vh;
   display: flex;
   align-items: center;

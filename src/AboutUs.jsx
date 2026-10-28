@@ -1,7 +1,7 @@
 // Company introduction shown on the landing page.
 function AboutUs() {
   return (
-    <section className="about" aria-labelledby="about-heading">
+    <section className="about about-us-container" aria-labelledby="about-heading">
       <h2 id="about-heading">Grown with care, delivered to your door</h2>
       <p>
         Paradise Nursery started with a simple belief: a home feels more welcoming when something
