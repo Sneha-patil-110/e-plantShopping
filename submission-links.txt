@@ -1,16 +1,13 @@
-PARADISE NURSERY - SUBMISSION LINKS
-STATUS: PENDING. Nothing is published yet. These URLs are not verified and must not be submitted until they are.
+PARADISE NURSERY - SUBMISSION LINKS (verified 2026-10-28)
 
-Public repository:       PENDING (not created)
-Deployed GitHub Pages:   PENDING (expected: https://<owner>.github.io/paradise-nursery/#/)
+Public repository:  https://github.com/Sneha-patil-110/paradise-nursery
+Live site (GitHub Pages): https://sneha-patil-110.github.io/paradise-nursery/
+Deployed commit:    ec171f1 (deploy workflow: success)
 
-Source files (expected pattern: https://github.com/OWNER/paradise-nursery/blob/main/PATH):
-1. README.md          PENDING
-2. src/AboutUs.jsx    PENDING
-3. src/App.css        PENDING
-4. src/App.jsx        PENDING
-5. src/CartSlice.jsx  PENDING
-6. src/ProductList.jsx PENDING
-7. src/CartItem.jsx   PENDING
-
-Local commit (not pushed): 27389fa
+Task 1  README.md:          https://github.com/Sneha-patil-110/paradise-nursery/blob/main/README.md
+Task 2  AboutUs.jsx:        https://github.com/Sneha-patil-110/paradise-nursery/blob/main/src/AboutUs.jsx
+Task 3  App.css:            https://github.com/Sneha-patil-110/paradise-nursery/blob/main/src/App.css
+Task 4  App.jsx:            https://github.com/Sneha-patil-110/paradise-nursery/blob/main/src/App.jsx
+Task 5  CartSlice.jsx:      https://github.com/Sneha-patil-110/paradise-nursery/blob/main/src/CartSlice.jsx
+Task 6  ProductList.jsx:    https://github.com/Sneha-patil-110/paradise-nursery/blob/main/src/ProductList.jsx
+Task 7  CartItem.jsx:       https://github.com/Sneha-patil-110/paradise-nursery/blob/main/src/CartItem.jsx
