@@ -5,11 +5,11 @@ A React shopping experience for indoor houseplants. Visitors read about the nurs
 ## Features
 
 - **Landing page** with a full-width hero background (bundled in `App.css`), a company introduction, and a "Get Started" button that opens the catalog.
-- **Plant catalog** with nine plants in three categories (Low-Light, Succulents and Cacti, Air-Purifying). Each card has an image, name, description, USD price, and an "Add to Cart" button.
+- **Plant catalog** with eighteen plants in three categories (six each) (Low-Light, Succulents and Cacti, Air-Purifying). Each card has an image, name, description, USD price, and an "Add to Cart" button.
 - **Smart add buttons**: a plant's button is disabled with an "In Cart" label while it is in the cart, and re-enables once the plant is removed entirely.
 - **Live cart badge** in the header that counts total units, not distinct products.
 - **Shopping cart page** with quantity controls, per-item subtotals, a cart total, remove buttons, an empty-cart state, and a "Continue Shopping" link.
-- **Checkout placeholder**: shows "Checkout coming soon!" and processes no payment.
+- **Checkout placeholder**: shows "Checkout Coming Soon!" and processes no payment.
 - Responsive layout for mobile and desktop, visible focus states, and accessible labels on controls.
 
 ## Technology stack

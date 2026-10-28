@@ -92,7 +92,7 @@ function CartItem() {
           <button
             type="button"
             className="btn btn-primary"
-            onClick={() => setCheckoutMessage('Checkout coming soon!')}
+            onClick={() => setCheckoutMessage('Checkout Coming Soon!')}
           >
             Checkout
           </button>
