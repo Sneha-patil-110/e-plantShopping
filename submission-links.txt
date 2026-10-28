@@ -1,8 +1,8 @@
-PARADISE NURSERY - SUBMISSION LINKS (verified 2026-10-28)
+PARADISE NURSERY - SUBMISSION LINKS (verified 2026-10-28, commit f193ea6)
 
 Public repository:  https://github.com/Sneha-patil-110/paradise-nursery
 Live site (GitHub Pages): https://sneha-patil-110.github.io/paradise-nursery/
-Deployed commit:    ec171f1 (deploy workflow: success)
+Deployed commit:    f193ea6 (deploy workflow: success)
 
 Task 1  README.md:          https://github.com/Sneha-patil-110/paradise-nursery/blob/main/README.md
 Task 2  AboutUs.jsx:        https://github.com/Sneha-patil-110/paradise-nursery/blob/main/src/AboutUs.jsx
