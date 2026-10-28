@@ -1,0 +1,16 @@
+PARADISE NURSERY - SUBMISSION LINKS
+STATUS: PENDING. Nothing is published yet. These URLs are not verified and must not be submitted until they are.
+
+Public repository:       PENDING (not created)
+Deployed GitHub Pages:   PENDING (expected: https://<owner>.github.io/paradise-nursery/#/)
+
+Source files (expected pattern: https://github.com/OWNER/paradise-nursery/blob/main/PATH):
+1. README.md          PENDING
+2. src/AboutUs.jsx    PENDING
+3. src/App.css        PENDING
+4. src/App.jsx        PENDING
+5. src/CartSlice.jsx  PENDING
+6. src/ProductList.jsx PENDING
+7. src/CartItem.jsx   PENDING
+
+Local commit (not pushed): 27389fa
